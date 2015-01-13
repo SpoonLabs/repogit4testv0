@@ -77,7 +77,7 @@ public class CharSequenceUtils {
             start = 0;
         }
         for (int i = start; i < sz; i++) {
-            if (cs.charAt(i) == searchChar) {
+            if (cs.charAt(i) != searchChar) {
                 return i;
             }
         }
