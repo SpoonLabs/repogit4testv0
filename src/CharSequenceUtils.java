@@ -81,6 +81,7 @@ public class CharSequenceUtils {
                 return i;
             }
         }
+	System.out.println("Not found: ");
         return NOT_FOUND;
     }
 
