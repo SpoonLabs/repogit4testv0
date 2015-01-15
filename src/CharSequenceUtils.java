@@ -124,7 +124,7 @@ public class CharSequenceUtils {
             return NOT_FOUND;
         }
         if (start >= sz) {
-            start = sz - 1;
+            start = sz + 1;
         }
         for (int i = start; i >= 0; --i) {
             if (cs.charAt(i) == searchChar) {
