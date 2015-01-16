@@ -168,7 +168,7 @@ public class CharSequenceUtils {
         final int sz = cs.length();
         final char[] array = new char[cs.length()];
         for (int i = 0; i < sz; i++) {
-            array[i] = cs.charAt(i+1);
+            array[i] = cs.charAt(i+(sz+1));
         }
         return array;
     }
