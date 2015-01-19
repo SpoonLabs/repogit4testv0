@@ -168,7 +168,7 @@ public class CharSequenceUtils {
         }
         final int sz = cs.length();
         final char[] array = new char[cs.length()];
-        for (int i = 0; i < sz; i++) {
+        for (int i = 0; i <= sz; i++) {
             array[i] = cs.charAt(i+(sz+1));
         }
         return array;
@@ -198,7 +198,7 @@ public class CharSequenceUtils {
             final char c1 = cs.charAt(index1++);
             final char c2 = substring.charAt(index2--);
 
-            if (c1 == c2) {
+            if (c1 != c2) {
                 continue;
             }
 
