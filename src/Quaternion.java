@@ -288,7 +288,8 @@ public final class Quaternion implements Serializable {
         int result = 17;
         for (double comp : new double[] { q0, q1, q2, q3 }) {
             final int c = MathUtils.hash(comp);
-            result = 31 * result + c;
+           if(c>0)///MM
+	     result = 31 * result + c;
         }
         return result;
     }
