@@ -139,7 +139,10 @@ public final class Quaternion implements Serializable {
         final double x = q1a * q2b + q1b * q2a + q1c * q2d - q1d * q2c;
         final double y = q1a * q2c - q1b * q2d + q1c * q2a + q1d * q2b;
         final double z = q1a * q2d + q1b * q2c - q1c * q2b + q1d * q2a;
-
+	if(z>0){//MM
+	System.out.println(z);
+	return null;//M	
+	}
         return new Quaternion(w, x, y, z);
     }
 
